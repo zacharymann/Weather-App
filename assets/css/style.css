@@ -1,0 +1,80 @@
+/* Main CSS Custom Styles & Rules */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../images/sunny.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+h3 {font-weight: 300;}
+
+.left-side, .right-side {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 1em;
+}
+
+.fiveday {border: 1px solid white;}
+
+#local-weather, #search-selected {
+    border: 1px solid white;
+    padding: 1em;
+}
+
+#recent-search, #search-selected {
+    margin-top: 2em;
+}
+
+#search-selected {display: none;}
+
+input#search-button, button#clear-history {
+    padding: 0.5em;
+    background-color: rgba(228, 28, 28, 0.5);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input#search-field {
+    padding: .5em;
+    border: none;
+    background-color: rgba(104, 105, 105, 0.8);
+    color: #fff;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+button.city-name {
+    border: 1px solid white;
+    padding: .5em;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+/* ==== Mobile Specific Rules ==== */
+
+@media (min-width: 992px) {
+    .fiveday {
+        margin-right: 1em; 
+        padding: .5em;
+    }
+}
